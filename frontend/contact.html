@@ -1,0 +1,206 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vinay Patil - Frontend Developer</title>
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body & Fonts */
+    body {
+      font-family: "Arial", sans-serif;
+      background-color: #0A0A0A; /* Dark background */
+      color: #FFFFFF;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: #111111;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #cccccc;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    .lang-toggle {
+      border: 1px solid #ccc;
+      padding: 6px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      color: #fff;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+
+    .lang-toggle:hover {
+      background: #333333;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 80px);
+      padding: 40px 20px;
+      background: #0A0A0A;
+    }
+
+    .hero-text {
+      max-width: 600px;
+      margin: 20px;
+      text-align: center; /* Center all text within the hero-text area */
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff00e6, #9f00ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: #cccccc;
+      margin-bottom: 30px;
+    }
+
+    .highlight {
+      color: #72c6ff; /* Highlight color for 'web-developer' */
+    }
+
+    .cta-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: linear-gradient(90deg, #007bff, #9f00ff);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      margin: 0 auto; /* Center the button horizontally */
+    }
+
+    .cta-btn:hover {
+      background: linear-gradient(90deg, #9f00ff, #007bff);
+    }
+
+    /* Hero Image */
+    .hero-img {
+      border-radius: 50%;
+      max-width: 350px;
+      margin: 20px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 2px solid #444444;
+    }
+
+    /* Footer (Optional) */
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #999999;
+      background: #111111;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+
+      .hero-text {
+        text-align: center;
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .nav-links {
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="logo">Vinay Patil</div>
+    <nav class="nav-links">
+      <a href="#">SERVICES</a>
+      <a href="#">TECHNOLOGIES</a>
+      <a href="#">PORTFOLIO</a>
+      <a href="/frontend/contact.html">CONTACT</a>
+    </nav>
+    <div class="lang-toggle">ENG / RU</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- Hero Text -->
+    <div class="hero-text">
+      <h1 class="hero-title">FRONTEND DEVELOPER</h1>
+      <p class="hero-subtitle">
+        I am Vinay Patil – <span class="highlight">web-developer</span> with a passion
+        for creating beautiful and responsive websites.
+      </p>
+      <a href="#" class="cta-btn" id="red">HII 👋 BRO 🚀</a>
+    </div>
+
+    <!-- Hero Image -->
+    <!-- <img
+      src="/static/"
+      alt="Vinay Patil - Frontend Developer"
+      class="hero-img"
+    /> -->
+    <img src="/static/img.jpg" alt="Welcome Image">
+
+  </section>
+
+
+  
+  <!-- Footer (Optional) -->
+  <footer>
+    <p>© 2024 – All rights reserved. Web design and development – Vinay Patil</p>
+  </footer>
+</body>
+</html>

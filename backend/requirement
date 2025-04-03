@@ -1,0 +1,478 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body class="animated-bg">
+    <div class="container">
+        <h1 id="welcomeText">Welcome!</h1>
+        <canvas id="confetti"></canvas>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script src="/static/script.js"></script>
+    <script src="animations.js"></script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vinay Patil - Frontend Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Arial", sans-serif;
+      background-color: #0A0A0A;
+      color: #FFFFFF;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: #111111;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #cccccc;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    .lang-toggle {
+      border: 1px solid #ccc;
+      padding: 6px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      color: #fff;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+
+    .lang-toggle:hover {
+      background: #333333;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 80px);
+      padding: 40px 20px;
+      background: #0A0A0A;
+    }
+
+    .hero-text {
+      max-width: 600px;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff00e6, #9f00ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-clip: text;
+      background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: #cccccc;
+      margin-bottom: 30px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: linear-gradient(90deg, #007bff, #9f00ff);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background: linear-gradient(90deg, #9f00ff, #007bff);
+    }
+
+    .services {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .services h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff007b, #4a90e2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 30px;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      width: 60%;
+      margin: 20px auto;
+      text-align: left;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #999999;
+      background: #111111;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Vinay Patil</div>
+    <nav class="nav-links">
+      <a href="#services">SERVICES</a>
+      <a href="#">TECHNOLOGIES</a>
+      <a href="#">PORTFOLIO</a>
+      <a href="/frontend/contact.html">CONTACT</a>
+    </nav>
+    <div class="lang-toggle">ENG / RU</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="hero-title">FRONTEND DEVELOPER</h1>
+      <p class="hero-subtitle">
+        I am Vinay Patil – <span class="highlight">web-developer</span> with a passion
+        for creating beautiful and responsive websites.
+      </p>
+      <a href="#services" class="cta-btn">Explore Services 🚀</a>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h1>MY SERVICES</h1>
+    <div class="service-card">
+      <h2>💻 Website Development</h2>
+      <p>I create websites based on your design, making them smooth and responsive.</p>
+    </div>
+    <div class="service-card">
+      <h2>🎨 Web Design</h2>
+      <p>I create modern and user-friendly web designs tailored to your brand.</p>
+    </div>
+    <div class="service-card">
+      <h2>🔧 WordPress Development</h2>
+      <p>I build websites on WordPress, making them easy to update and manage.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 – All rights reserved. Web design and development – Vinay Patil</p>
+  </footer>
+</body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vinay Patil - Frontend Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Arial", sans-serif;
+      background-color: #0A0A0A;
+      color: #FFFFFF;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: #111111;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #cccccc;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    .lang-toggle {
+      border: 1px solid #ccc;
+      padding: 6px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      color: #fff;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+
+    .lang-toggle:hover {
+      background: #333333;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 80px);
+      padding: 40px 20px;
+      background: #0A0A0A;
+    }
+
+    .hero-text {
+      max-width: 600px;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff00e6, #9f00ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-clip: text;
+      background-clip: text;
+      background-clip: text;
+      background-clip: text;
+      background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: #cccccc;
+      margin-bottom: 30px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: linear-gradient(90deg, #007bff, #9f00ff);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background: linear-gradient(90deg, #9f00ff, #007bff);
+    }
+
+    .services {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .services h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff007b, #4a90e2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 30px;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      width: 60%;
+      margin: 20px auto;
+      text-align: left;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #999999;
+      background: #111111;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .service-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Vinay Patil</div>
+    <nav class="nav-links">
+      <a href="#services">SERVICES</a>
+      <a href="#">TECHNOLOGIES</a>
+      <a href="#">PORTFOLIO</a>
+      <a href="/frontend/contact.html">CONTACT</a>
+    </nav>
+    <div class="lang-toggle" onclick="toggleLanguage()">ENG / RU</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="hero-title">FRONTEND DEVELOPER</h1>
+      <p class="hero-subtitle">
+        I am Vinay Patil – <span class="highlight">web-developer</span> with a passion
+        for creating beautiful and responsive websites.
+      </p>
+      <a href="#services" class="cta-btn">Explore Services 🚀</a>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h1>MY SERVICES</h1>
+    <div class="service-card">
+      <h2>💻 Website Development</h2>
+      <p>I create websites based on your design, making them smooth and responsive.</p>
+    </div>
+    <div class="service-card">
+      <h2>🎨 Web Design</h2>
+      <p>I create modern and user-friendly web designs tailored to your brand.</p>
+    </div>
+    <div class="service-card">
+      <h2>🔧 WordPress Development</h2>
+      <p>I build websites on WordPress, making them easy to update and manage.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 – All rights reserved. Web design and development – Vinay Patil</p>
+  </footer>
+
+  <script>
+    function toggleLanguage() {
+      const langToggle = document.querySelector('.lang-toggle');
+      if (langToggle.textContent.includes("ENG")) {
+        langToggle.textContent = "RU / ENG";
+        document.querySelector(".hero-title").textContent = "ФРОНТЕНД-РАЗРАБОТЧИК";
+        document.querySelector(".hero-subtitle").textContent = "Я Винай Патиль – веб-разработчик, создающий красивые и адаптивные сайты.";
+        document.querySelector(".cta-btn").textContent = "Исследовать услуги 🚀";
+        document.querySelector(".services h1").textContent = "МОИ УСЛУГИ";
+      } else {
+        langToggle.textContent = "ENG / RU";
+        document.querySelector(".hero-title").textContent = "FRONTEND DEVELOPER";
+        document.querySelector(".hero-subtitle").textContent = "I am Vinay Patil – web-developer with a passion for creating beautiful and responsive websites.";
+        document.querySelector(".cta-btn").textContent = "Explore Services 🚀";
+        document.querySelector(".services h1").textContent = "MY SERVICES";
+      }
+    } -->
+
+    <!-- // Smooth scrolling for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html> -->
+xnnpzkro
